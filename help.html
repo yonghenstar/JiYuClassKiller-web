@@ -1,0 +1,583 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>极域课堂杀手 - 使用帮助</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #3b82f6;
+            --secondary: #1e40af;
+            --accent: #dc2626;
+        }
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+        }
+        .feature-card {
+            transition: all 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+        }
+        .step-indicator {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        .shortcut-key {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 28px;
+            height: 28px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 6px;
+            font-size: 0.8rem;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-slate-900 to-blue-900 text-white">
+    <!-- 导航栏 -->
+    <nav class="glass-effect rounded-2xl m-4 p-4 sticky top-4 z-50">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            <div class="flex items-center space-x-3">
+                <i class="fas fa-tools text-2xl text-yellow-300"></i>
+                <h1 class="text-2xl font-bold">极域课堂杀手使用指南</h1>
+            </div>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#quick-start" class="hover:text-yellow-300 transition-colors flex items-center">
+                    <i class="fas fa-play mr-2"></i>快速开始
+                </a>
+                <a href="#close-guide" class="hover:text-yellow-300 transition-colors flex items-center">
+                    <i class="fas fa-power-off mr-2">关闭教学
+                </a>
+                <a href="#features" class="hover:text-yellow-300 transition-colors flex items-center">
+                    <i class="fas fa-cogs mr-2"></i>功能详解
+                </a>
+                <a href="#troubleshooting" class="hover:text-yellow-300 transition-colors flex items-center">
+                    <i class="fas fa-wrench mr-2"></i>故障排除
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mx-auto px-4 py-8">
+        <!-- 快速开始区域 -->
+        <section id="quick-start" class="mb-16">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4">快速上手指南</h2>
+                <p class="text-xl text-gray-200 max-w-3xl mx-auto">
+                只需简单几步配置，即可充分发挥极域课堂杀手的强大功能
+                </p>
+            </div>
+
+            <div class="glass-effect rounded-2xl p-8 mb-8">
+                <h3 class="text-2xl font-bold mb-6 text-green-300">
+                    <i class="fas fa-rocket mr-3"></i>安装与配置、
+                </h3>
+                <div class="space-y-8">
+                    <div class="flex items-start">
+                        <div class="step-indicator bg-blue-500 mr-4">1</div>
+                        <div class="flex-1">
+                            <h4 class="text-xl font-semibold mb-3">下载安装包</h4>
+                            <p class="text-gray-300 mb-3">访问官方网站或从授权渠道获取最新版本的安装程序</p>
+                            <div class="bg-gray-800/40 p-4 rounded-lg">
+                                <code class="text-green-400">https://cst.de5.net/cloud.html
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <div class="step-indicator bg-green-500 mr-4">2</div>
+                        <div class="flex-1">
+                            <h4 class="text-xl font-semibold mb-3">安装配置</h4>
+                            <p class="text-gray-300 mb-3">运行安装程序，选择安装路径，配置网络参数</p>
+                            <ul class="text-gray-300 space-y-2">
+                                <li><i class="fas fa-check text-green-400 mr-2"></i>确保教师机与学生机在同一网段</li>
+                                <li><i class="fas fa-check text-green-400 mr-2"></i>关闭防火墙或添加程序白名单</li>
+                                <li><i class="fas fa-check text-green-400 mr-2"></i>输入万能密码cstnb</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <div class="step-indicator bg-purple-500 mr-4">3</div>
+                        <div class="flex-1">
+                            <h4 class="text-xl font-semibold mb-3">启动学生端</h4>
+                        <p class="text-gray-300 mb-3">启动学生端程序，等待老师端自动发现和连接</p>
+                        <div class="bg-yellow-500/20 p-3 rounded-lg">
+                                <i class="fas fa-exclamation-triangle mr-2"></i>
+                                <span class="text-yellow-300">注意：</span>
+                                <span class="text-gray-300">首次使用需在学生端运行连接程序</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 关闭教学区域 -->
+        <section id="close-guide" class="mb-16">
+            <h2 class="text-3xl font-bold text-center mb-12">极域课堂关闭教学
+            <div class="glass-effect rounded-2xl p-8">
+                <h3 class="text-2xl font-bold mb-6 text-red-300">
+                    <i class="fas fa-power-off mr-3"></i>如何正确关闭极域课堂
+                </h3>
+                <div class="space-y-8">
+                    <div class="feature-card glass-effect rounded-2xl p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-gradient-to-br from-red-500 to-orange-500 rounded-xl flex items-center justify-center mr-4">
+                                <i class="fas fa-desktop text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold">方法一：通过任务管理器</h3>
+                        </div>
+                        <p class="text-gray-300 mb-4">这是最直接有效的方法，适用于大多数情况</p>
+                        
+                        <div class="space-y-4">
+                            <div class="bg-gray-800/40 p-4 rounded-lg">
+                                <h5 class="font-semibold text-red-300 mb-3">操作步骤：</h5>
+                                <ul class="text-gray-300 space-y-3">
+                                    <li class="flex items-start">
+                                        <span class="shortcut-key">Ctrl</span>
+                                        <span class="shortcut-key">Shift</span>
+                                <span class="shortcut-key">Esc</span>
+                                <span>打开任务管理器</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="shortcut-key">→</span>
+                                <span>找到"StudentMain.exe"进程</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="shortcut-key">Del</span>
+                                <span>右键点击选择"结束任务"</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-red-500/10 p-4 rounded-lg border-l-4 border-red-500">
+                                <h5 class="font-semibold text-red-300 mb-2">注意事项：</h5>
+                                <ul class="text-gray-300 space-y-2">
+                                    <li><i class="fas fa-exclamation-circle mr-2"></i>此方法会立即终止程序，未保存的数据可能会丢失</li>
+                                    <li><i class="fas fa-exclamation-circle mr-2"></i>部分版本可能有保护机制，需要管理员权限</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="feature-card glass-effect rounded-2xl p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center mr-4">
+                                <i class="fas fa-cogs text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold">方法二：通过系统服务</h3>
+                        </div>
+                        <p class="text-gray-300 mb-4">通过停止相关系统服务来关闭极域课堂</p>
+                        
+                        <div class="space-y-4">
+                            <div class="bg-gray-800/40 p-4 rounded-lg">
+                                <h5 class="font-semibold text-blue-300 mb-3">操作步骤：</h5>
+                        <ul class="text-gray-300 space-y-3">
+                            <li class="flex items-start">
+                                <span class="shortcut-key">Win</span>
+                                <span class="shortcut-key">R</span>
+                                <span>输入"services.msc"打开服务管理器</li>
+                            <li class="flex items-start">
+                                <span class="shortcut-key">→</span>
+                                <span>找到"Mythware"或"极域"相关服务</li>
+                            <li class="flex items-start">
+                                <span class="shortcut-key">→</span>
+                                <span>右键点击选择"停止"</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-blue-500/10 p-4 rounded-lg border-l-4 border-blue-500">
+                                <h5 class="font-semibold text-blue-300 mb-2">适用情况：</h5>
+                                <ul class="text-gray-300 space-y-2">
+                                    <li><i class="fas fa-check-circle mr-2"></i>当任务管理器无法关闭程序时</li>
+                                    <li><i class="fas fa-check-circle mr-2"></i>需要完全卸载或重新安装程序时</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="feature-card glass-effect rounded-2xl p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-gradient-to-br from-green-500 to-teal-500 rounded-xl flex items-center justify-center mr-4">
+                                <i class="fas fa-terminal text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold">方法三：使用命令行</h3>
+                        </div>
+                        <p class="text-gray-300 mb-4">通过系统命令强制终止极域课堂进程</p>
+                        
+                        <div class="space-y-4">
+                            <div class="bg-gray-800/40 p-4 rounded-lg">
+                                <h5 class="font-semibold text-green-300 mb-3">操作命令：</h5>
+                            <div class="bg-gray-900 p-4 rounded-lg">
+                                <code class="text-green-400">taskkill -f StudentMain.exe</code>
+                            </div>
+                            <div class="bg-gray-900 p-4 rounded-lg">
+                                <code class="text-green-400">taskkill -f TeacherMain.exe</code>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-green-500/10 p-4 rounded-lg border-l-4 border-green-500">
+                                <h5 class="font-semibold text-green-300 mb-2">高级用法：</h5>
+                            <div class="bg-gray-900 p-4 rounded-lg">
+                                <code class="text-green-400">wmic process where "name='StudentMain.exe'" delete</code>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 核心功能详解 -->
+        <section id="features" class="mb-16">
+            <h2 class="text-3xl font-bold text-center mb-12">核心功能操作指南</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- 屏幕监控功能 -->
+                <div class="feature-card glass-effect rounded-2xl p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center mr-4">
+                            <i class="fas fa-desktop text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">屏幕实时监控</h3>
+                    </div>
+                    <p class="text-gray-300 mb-4">全方位监控学生屏幕活动，及时发现异常行为</p>
+                    
+                    <div class="space-y-4">
+                        <div class="bg-gray-800/40 p-4 rounded-lg">
+                            <h5 class="font-semibold text-blue-300 mb-3">操作步骤：</h5>
+                            <ul class="text-gray-300 space-y-3">
+                                <li class="flex items-start">
+                                    <span class="shortcut-key">M</span>
+                                    <span>开启监控模式，查看所有学生屏幕</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="shortcut-key">D</span>
+                                    <span>双击学生头像放大查看详细画面</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="shortcut-key">L</span>
+                                    <span>右键菜单锁定特定学生屏幕</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-red-500/10 p-4 rounded-lg border-l-4 border-red-500">
+                                <h5 class="font-semibold text-red-300 mb-2">高级功能：</h5>
+                                <ul class="text-gray-300 space-y-2">
+                                    <li><i class="fas fa-video mr-2"></i>屏幕录制 - 记录学生操作过程</li>
+                                    <li><i class="fas fa-history mr-2"></i>历史回放 - 查看过往屏幕记录</li>
+                                    <li><i class="fas fa-exclamation-circle mr-2"></i>异常警报 - 自动检测违规行为</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 文件管理功能 -->
+                    <div class="feature-card glass-effect rounded-2xl p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-gradient-to-br from-green-500 to-blue-500 rounded-xl flex items-center justify-center mr-4">
+                                <i class="fas fa-file-export text-xl"></i>
+                            </div>
+                        <h3 class="text-xl font-semibold">文件分发收集</h3>
+                    </div>
+                    <p class="text-gray-300 mb-4">快速分发教学资料，批量收集学生作业</p>
+                    
+                    <div class="space-y-4">
+                        <div class="bg-gray-800/40 p-4 rounded-lg">
+                                <h5 class="font-semibold text-green-300 mb-3">分发操作：</h5>
+                                <ul class="text-gray-300 space-y-3">
+                                    <li class="flex items-start">
+                                        <i class="fas fa-mouse-pointer text-blue-400 mr-3 mt-1"></i>
+                                        <span>选择文件 → 指定学生 → 点击发送</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-folder-open text-green-400 mr-3 mt-1"></i>
+                                        <span>支持拖拽操作，批量选择多个文件</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="bg-blue-500/10 p-4 rounded-lg border-l-4 border-blue-500">
+                                <h5 class="font-semibold text-blue-300 mb-2">收集功能：</h5>
+                                <ul class="text-gray-300 space-y-2">
+                                    <li><i class="fas fa-download mr-2">自动收集 - 按设定路径获取学生文件</li>
+                                    <li><i class="fas fa-sort mr-2"></i>智能分类 - 按学生姓名自动整理</li>
+                                    <li><i class="fas fa-check-circle mr-2"></i>状态监控 - 实时显示收集进度</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 网络控制功能 -->
+                    <div class="feature-card glass-effect rounded-2xl p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-gradient-to-br from-orange-500 to-red-500 rounded-xl flex items-center justify-center mr-4">
+                                <i class="fas fa-network-wired text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold">网络访问管理</h3>
+                        </div>
+                        <p class="text-gray-300 mb-4">精确控制学生网络访问权限，保障课堂秩序</p>
+                    
+                    <div class="space-y-4">
+                        <div class="bg-gray-800/40 p-4 rounded-lg">
+                                <h5 class="font-semibold text-orange-300 mb-3">黑白名单设置：</h5>
+                                <ul class="text-gray-300 space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-ban text-red-400 mr-3 mt-1"></i>
+                                <span>添加禁止访问的网站域名</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-400 mr-3 mt-1"></i>
+                                <span>设置允许访问的教育资源网站</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-purple-500/10 p-4 rounded-lg border-l-4 border-purple-500">
+                                <h5 class="font-semibold text-purple-300 mb-2">时段控制：</h5>
+                                <ul class="text-gray-300 space-y-2">
+                                    <li><i class="fas fa-clock mr-2"></i>定时封锁 - 在特定时间段限制网络访问</li>
+                                    <li><i class="fas fa-calendar-alt mr-2"></i>课程安排 - 根据课表自动调整网络策略</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 远程控制功能 -->
+                    <div class="feature-card glass-effect rounded-2xl p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl flex items-center justify-center mr-4">
+                                <i class="fas fa-terminal text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold">远程协助操作</h3>
+                        </div>
+                        <p class="text-gray-300 mb-4">直接控制学生计算机，提供实时技术支持</p>
+                    
+                    <div class="space-y-4">
+                        <div class="bg-gray-800/40 p-4 rounded-lg">
+                                <h5 class="font-semibold text-pink-300 mb-3">控制权限：</h5>
+                                <ul class="text-gray-300 space-y-3">
+                                    <li class="flex items-start">
+                                        <i class="fas fa-play-circle text-green-400 mr-3 mt-1"></i>
+                                        <span>申请控制权限 → 学生同意 → 开始操作</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-keyboard text-blue-400 mr-3 mt-1"></i>
+                                        <span>支持键盘鼠标操作，运行程序命令</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="bg-green-500/10 p-4 rounded-lg border-l-4 border-green-500">
+                                <h5 class="font-semibold text-green-300 mb-2">安全特性：</h5>
+                                <ul class="text-gray-300 space-y-2">
+                                    <li><i class="fas fa-shield-alt mr-2"></i>操作记录 - 记录所有远程控制操作</li>
+                                    <li><i class="fas fa-eye mr-2"></i>实时预览 - 教师可看到操作效果</li>
+                                    <li><i class="fas fa-stop-circle mr-2"></i>随时终止 - 学生可随时收回控制权</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 故障排除区域 -->
+        <section id="troubleshooting" class="mb-16">
+            <h2 class="text-3xl font-bold text-center mb-12">故障排除与解决方案</h2>
+            <div class="glass-effect rounded-2xl p-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6 text-red-300">
+                            <i class="fas fa-exclamation-triangle mr-3"></i>常见问题
+                        </h3>
+                        <div class="space-y-6">
+                            <div class="bg-red-500/20 p-4 rounded-lg">
+                                <h4 class="font-semibold mb-2">学生端无法连接</h4>
+                                <p class="text-gray-300">检查网络连通性，确认防火墙设置，验证程序版本兼容性</p>
+                            </div>
+                            <div class="bg-yellow-500/20 p-4 rounded-lg">
+                                <h4 class="font-semibold mb-2">屏幕监控延迟</h4>
+                                <p class="text-gray-300">降低监控画质，减少同时监控数量，检查网络带宽</p>
+                            </div>
+                            <div class="bg-blue-500/20 p-4 rounded-lg">
+                                <h4 class="font-semibold mb-2">文件传输失败</h4>
+                                <p class="text-gray-300">检查磁盘空间，确认文件权限，验证网络稳定性</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6 text-green-300">
+                            <i class="fas fa-tools mr-3"></i>诊断工具
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="fas fa-wifi text-green-400 mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-semibold mb-1">网络连接测试</h4>
+                            <p class="text-gray-300">使用内置工具检测TCP/UDP连接状态</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fas fa-sync-alt text-blue-400 mt-1 mr-3"></i>
+                        <div>
+                            <h4 class="font-semibold mb-1">服务状态检查</h4>
+                        <p class="text-gray-300">验证核心服务是否正常运行</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <i class="fas fa-cogs text-purple-400 mt-1 mr-3"></i>
+                    <div>
+                        <h4 class="font-semibold mb-1">日志分析</h4>
+                    <p class="text-gray-300">查看详细运行日志，定位问题根源</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<!-- 技术支持区域 -->
+<section class="glass-effect rounded-2xl p-8 text-center">
+    <h2 class="text-3xl font-bold mb-4">获取技术支持</h2>
+    <p class="text-xl text-gray-200 mb-6">遇到问题？我们的技术团队随时为您提供帮助</p>
+    <div class="flex flex-wrap justify-center gap-4">
+        <button class="bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 px-6 py-3 rounded-full font-semibold transition-all transform hover:scale-105">
+                    <i class="fas fa-headset mr-2"></i>在线客服
+                </button>
+                <button class="glass-effect hover:bg-white/20 px-6 py-3 rounded-full font-semibold transition-all">
+                    <i class="fas fa-book mr-2"></i>用户手册
+            </button>
+            <button class="glass-effect hover:bg-white/20 px-6 py-3 rounded-full font-semibold transition-all">
+                    <i class="fas fa-video mr-2"></i>视频教程
+        </button>
+    </div>
+</section>
+</main>
+
+<!-- 页脚 -->
+<footer class="glass-effect rounded-2xl m-4 p-6 mt-8">
+    <div class="container mx-auto text-center">
+        <div class="flex justify-center space-x-6 mb-4">
+        <a href="#" class="text-gray-300 hover:text-white transition-colors">
+            <i class="fab fa-github text-xl"></i>
+        </a>
+        <a href="#" class="text-gray-300 hover:text-white transition-colors">
+            <i class="fab fa-weixin text-xl"></i>
+        </a>
+        <a href="#" class="text-gray-300 hover:text-white transition-colors">
+            <i class="fab fa-qq text-xl"></i>
+        </a>
+        <a href="#" class="text-gray-300 hover:text-white transition-colors">
+            <i class="fas fa-envelope text-xl"></i>
+        </a>
+    </div>
+    <p class="text-gray-300">© 2025 极域课堂杀手 - 专业教学脱控工具</p>
+    <p class="text-gray-400 text-sm mt-2">版本 3.0.1 | 技术支持：CST协会code工会</p>
+    <div id="current-time" class="text-gray-500 text-xs mt-3"></div>
+</div>
+</footer>
+
+<script>
+    // 页面加载动画
+    document.addEventListener('DOMContentLoaded', function() {
+        const elements = document.querySelectorAll('.feature-card, .glass-effect');
+        elements.forEach((el, index) => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            
+            setTimeout(() => {
+                el.style.transition = 'all 0.6s ease';
+                el.style.opacity = '1';
+                el.style.transform = 'translateY(0)';
+            }, index * 150);
+        });
+        
+        updateTime();
+    });
+
+    // 平滑滚动导航
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+
+    // 功能卡片点击效果
+    document.querySelectorAll('.feature-card').forEach(card => {
+        card.addEventListener('click', function() {
+            const featureName = this.querySelector('h3').textContent;
+            const notification = document.createElement('div');
+            notification.className = 'fixed top-4 right-4 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg z-50';
+            notification.textContent = `正在查看: ${featureName} 详细说明';
+            document.body.appendChild(notification);
+            
+            setTimeout(() => {
+                notification.remove();
+            }, 3000);
+        });
+    });
+
+    // 键盘快捷键
+    document.addEventListener('keydown', function(e) {
+        if (e.ctrlKey) {
+            switch(e.key) {
+                case '1':
+                    e.preventDefault();
+                    document.querySelector('#quick-start').scrollIntoView({behavior: 'smooth'});
+                    break;
+                case '2':
+                    e.preventDefault();
+                    document.querySelector('#close-guide').scrollIntoView({behavior: 'smooth'});
+                    break;
+                case '3':
+                    e.preventDefault();
+                    document.querySelector('#features').scrollIntoView({behavior: 'smooth'});
+                    break;
+                case '4':
+                    e.preventDefault();
+                    document.querySelector('#troubleshooting').scrollIntoView({behavior: 'smooth'});
+                    break;
+            }
+        }
+    });
+
+    // 显示当前时间
+    function updateTime() {
+        const now = new Date();
+        const timeString = now.toLocaleString('zh-CN', {
+                year: 'numeric',
+                month: '2-digit',
+                day: '2-digit',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit'
+            });
+            document.getElementById('current-time').textContent = `当前时间：${timeString}`;
+        }
+
+        setInterval(updateTime, 1000);
+    </script>
+</body>
+</html>
